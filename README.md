@@ -1,10 +1,10 @@
 # Catalog History Archive
 
-##### This repo is for my catalog history script.  This script retrieves and stores JSON info from my music catalog, and acts as a simple archive system.      
+##### This repo is for my catalog history archive script.  This script retrieves and stores JSON info from my music catalog and acts as a simple archive system.      
 
 
 ## Quick Start
--Clone the repo: `git clone https://github.com/ianagpawa/catalog-history-archive.git`
+Clone the repo: `git clone https://github.com/ianagpawa/catalog-history-archive.git`
 
 
 ### Dependencies
@@ -18,9 +18,13 @@ While the terminal is in the project folder:
 To retrieve and store info regarding all instances of class `Playlist`, run the following command:
 ```
 $ python get_all_playlists.py
-``
+```
 
 #### To Archive An Individual Playlist
+To retrieve and store info regarding a particular playlist, run the following command with the *PLAYLIST_NAME*:
+```
+$ python get_playlists.py *PLAYLIST_NAME*
+```
 
 ### File structure
 Within the project folder, you will find the following files:
