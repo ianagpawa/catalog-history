@@ -1,6 +1,10 @@
 import sys
 import requests
 import json
+from time import gmtime, strftime
+
+timestamp = strftime("%Y%b%d-%H%M%S", gmtime())
+print timestamp
 
 playlists_url = "http://ec2-34-201-35-166.compute-1.amazonaws.com/playlists/JSON/"
 
