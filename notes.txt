@@ -1,0 +1,5 @@
+get jsons for each playlist
+write jsons to file
+
+reconstruct each submission
+build database from that
