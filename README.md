@@ -1,6 +1,6 @@
 # Catalog History Archive
 
-##### This repo is for my catalog history archive script.  This script retrieves and stores JSON info from my music catalog and acts as a simple archive system.      
+##### This repo is for my catalog history archive script.  This script retrieves and stores JSON info from my music catalog and acts as a simple archive system.  The JSON objects are decoded and stored in text files located in archive under timestamped folders.
 
 
 ## Quick Start
@@ -23,7 +23,7 @@ $ python get_all_playlists.py
 #### To Archive An Individual Playlist
 To retrieve and store info regarding a particular playlist, run the following command with the *PLAYLIST_NAME*:
 ```
-$ python get_playlists.py *PLAYLIST_NAME*
+$ python get_playlist.py *PLAYLIST_NAME*
 ```
 
 ### File structure
