@@ -11,6 +11,7 @@ print "Getting JSON"
 r = requests.get(playlists_url)
 playlists_json = r.json()
 playlists_decoded = json.dumps(playlists_json)
+r.close()
 print "Received JSON"
 
 folder_location = "archive/playlists"
