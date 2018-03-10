@@ -11,5 +11,3 @@ playlists_decoded = json.dumps(playlists_json)
 file = open("test.txt", "w")
 file.write(playlists_decoded)
 file.close()
-
-# base_url = "http://ec2-34-201-35-166.compute-1.amazonaws.com/%s/JSON"
