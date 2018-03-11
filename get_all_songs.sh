@@ -2,10 +2,7 @@
 
 num=$(python get_number_of_playlists.py)
 
-i=1
-
-while [ $i -lt $num ]
+for ((i=1; i<=num;i++))
 do
     echo $i
-    i=$[$i+1]
 done
