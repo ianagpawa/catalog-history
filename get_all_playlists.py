@@ -19,7 +19,7 @@ if not os.path.exists(folder_location):
     print "Creating %s folder" % folder_location
     os.mkdir(folder_location)
 
-file_location = "%s/%s.txt" % (folder_location, timestamp)
+file_location = "%s/%s.json" % (folder_location, timestamp)
 print "Writing file"
 file = open(file_location, "w")
 file.write(playlists_decoded)
