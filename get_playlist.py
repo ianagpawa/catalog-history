@@ -9,14 +9,14 @@ from time import gmtime, strftime
 playlist_number = sys.argv[1]
 playlists_url = "http://ec2-34-201-35-166.compute-1.amazonaws.com/playlist/%s/songs/JSON" % playlist_number
 
-#
-# print "Getting JSON"
-# r = requests.get(playlists_url)
-# playlists_json = r.json()
-# playlists_decoded = json.dumps(playlists_json)
-# print "Received JSON"
-#
-# folder_location = "archive/playlists"
+
+print "Getting JSON"
+r = requests.get(playlists_url)
+playlists_json = r.json()
+playlists_decoded = json.dumps(playlists_json)
+print "Received JSON"
+
+# folder_location = "archive/1"
 # if not os.path.exists(folder_location):
 #     print "Creating %s folder" % folder_location
 #     os.mkdir(folder_location)
