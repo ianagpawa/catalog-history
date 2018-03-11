@@ -2,7 +2,7 @@ import json
 import os
 
 playlists = json.loads(
-    open('./archive/all_playlists/2018Mar11-143906.json', 'r').read())['Playlists']
+    open('./archive/all_playlists/2018Mar11-150923.json', 'r').read())['Playlists']
 
 def get_playlist_name(n):
     for playlist in playlists:

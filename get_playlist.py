@@ -20,7 +20,7 @@ playlist_decoded = json.dumps(playlist_json)
 print "Received JSON"
 
 folder_location = "archive/playlists/%s-%s" % (playlist_number, playlist_name)
-create_folders(file_location)
+create_folders(folder_location)
 
 file_location = "%s/%s.json" % (folder_location, timestamp)
 print "Writing file"
