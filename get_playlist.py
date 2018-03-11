@@ -20,14 +20,11 @@ playlist_decoded = json.dumps(playlist_json)
 print "Received JSON"
 
 folder_location = "archive/playlists/%s-%s" % (playlist_number, playlist_name)
-# if not os.path.exists(folder_location):
-#     print "Creating %s folder" % folder_location
-#     os.mkdir(folder_location)
 create_folders(file_location)
-#
-# file_location = "%s/%s.json" % (folder_location, timestamp)
-# print "Writing file"
-# file = open(file_location, "w")
-# file.write(playlist_decoded)
-# file.close()
-# print "Finished. Created '%s'" % file_location
+
+file_location = "%s/%s.json" % (folder_location, timestamp)
+print "Writing file"
+file = open(file_location, "w")
+file.write(playlist_decoded)
+file.close()
+print "Finished. Created '%s'" % file_location
