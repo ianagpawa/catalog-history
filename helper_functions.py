@@ -17,6 +17,3 @@ def create_folders(file_location):
             current += folder + "/"
             next if (os.path.exists(current)) else os.mkdir(current)
     print "Done creating folders"
-
-def get_number_of_playlists():
-    return len(playlists)
