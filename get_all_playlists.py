@@ -14,7 +14,7 @@ playlists_decoded = json.dumps(playlists_json)
 r.close()
 print "Received JSON"
 
-folder_location = "archive/playlists"
+folder_location = "archive/all_playlists"
 if not os.path.exists(folder_location):
     print "Creating %s folder" % folder_location
     os.mkdir(folder_location)
